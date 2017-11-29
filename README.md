@@ -28,7 +28,7 @@ Har du kokt øving. Hva er det brune der egil. Er det <br>
 en kokt øving. Du driver vel ikke å koker. Har du kokt<br>
 øving. Har du kokt øving. kok!
 
-Nei studass, jeg er kun niogtyve år, jeg føler meg<br>
+Nei studass, jeg er kun førsteklassing, jeg føler meg<br>
 ikke moden for denslags ennå. Men til neste år blir<br>
 jeg faddder i august, og da har jeg tenkt til å begynne<br>
 å koke! Men bare et løsningsforslag i ny og ne. Å jeg skal <br>
