@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+@font-face {
+    font-family: "Archivo";
+    src: url(../fonts/Archivo-Black/ArchivoBlack-Regular.ttf);
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Georgia,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+    font-weight: 300;
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: "Archivo";
+}
+
+#wrapper{
+    position: relative;
+}
+
+#banner{
+    width:100%;
+    height: auto;
+}
+
+.btn.sharp {
+    border-radius:0;
+}
+
+.col-sm-height {
+    display: table-cell;
+    float: none !important;
+}
+
+.row-same-height {
+    display: table;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #00ADEF;
+    color: black
+}
+
+.exercises {
+    background-color: #F7F3E9;
+}
+
+.exams {
+    background-color: #9F6C4B;
+}
+
+.raports {
+    background-color: #515151;
+}
+
+#dirty-hack{
+    background-color: #515151;
+}

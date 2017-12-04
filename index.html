@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./website/js/jquery.easy-autocomplete.min.js"></script>
+    <link rel="stylesheet" href="./website/css/easy-autocomplete.min.css">
+    <link rel="stylesheet" href="./website/css/easy-autocomplete.themes.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./website/css/style.css">
+    <link rel="shortcut icon" href="/website/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./website/img/favicon.ico" type="image/x-icon">
+    <title>Kokulfs kokebok</title>
+</head>
+
+<body>
+
+    <!-- <div id="bannerimage"> -->
+    <!-- <h1>Kokulfs kokebok</h1> -->
+    <!-- <input id="provider-json" /> -->
+    <!-- </div> -->
+
+    <!-- <div id="bannerimage"> -->
+    <!-- <h1>My First Bootstrap Page</h1> -->
+    <!-- <p>This is some text.</p>  -->
+    <!-- </div> -->
+
+    <!-- <div id="bg1"> -->
+    <!-- <h1>Ma101</h1> -->
+    <!-- <input id="provider-json"> -->
+    <!-- </div> -->
+    <div id="wrapper">
+        <!-- <img id="banner" src="website/img/bears.png" /> -->
+        <!-- <img id="banner" src="website/img/green.png" /> -->
+        <img id="banner" src="website/img/minimal.png" />
+    </div>
+
+    <!-- <div class="image"> -->
+    <!-- <img src="website/img/kok3.png" alt="" /> -->
+    <!-- <h2>A Movie in the Park:<br />Kung Fu Panda</h2> -->
+    <!-- </div> -->
+
+    <hr/>
+    <h1>MA1101</h1>
+    <hr/>
+
+    <div class="fluid-container" id="dirty-hack">
+        <div class="row row-same-height">
+            <div class="col-sm-4 col-sm-height exercises">
+                <h2>Exercises & Solutions</h3>
+                    <h2>2017</h3>
+                        <div class="btn-group-vertical btn-lg btn-block">
+                            <a href="./ma/ma1101/kok/2017/ma1101-2017-02-lf.pdf" class="btn btn-primary" role="button">ma1101-2017-02-lf.pdf</a>
+                            <a href="./ma/ma1101/kok/2017/ma1101-2017-03-lf.pdf" class="btn btn-primary" role="button">ma1101-2017-03-lf.pdf</a>
+                            <a href="./ma/ma1101/kok/2017/ma1101-2017-04-lf.pdf" class="btn btn-primary" role="button">ma1101-2017-04-lf.pdf</a>
+                            <a href="./ma/ma1101/kok/2017/ma1101-2017-05-lf.pdf" class="btn btn-primary" role="button">ma1101-2017-05-lf.pdf</a>
+                            <a href="./ma/ma1101/kok/2017/ma1101-2017-06-lf.pdf" class="btn btn-primary" role="button">ma1101-2017-06-lf.pdf</a>
+                            <a href="./ma/ma1101/kok/2017/ma1101-2017-07-lf.pdf" class="btn btn-primary" role="button">ma1101-2017-07-lf.pdf</a>
+                            <a href="./ma/ma1101/kok/2017/ma1101-2017-08-lf.pdf" class="btn btn-primary" role="button">ma1101-2017-08-lf.pdf</a>
+                        </div>
+
+                        <h2>2016</h3>
+            </div>
+            <div class="col-sm-4 col-sm-height exams">
+                <h2>Exams</h2>
+                <p>Lorem ipsum dolor..</p>
+                <p>Ut enim ad..</p>
+            </div>
+            <div class="col-sm-4 col-sm-height raports">
+                <h2>Reports</h2>
+                <p>Lorem ipsum dolor..</p>
+                <p>Ut enim ad..</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="example1"></div> -->
+
+    <!-- <script src="website/js/PDFObject/pdfobject.js"></script> -->
+    <!-- <script>PDFObject.embed("ma/ma1101/kok/2017/ma1101-2017-02-lf.pdf", "#example1");</script> -->
+    <!-- file:///home/oisov/Programming/Kokulf/kok/ma/ma1101/kok/2017/ma1101-2017-01-ex.pdf -->
+    <script>
+        /* $('#bg').css("height", $(document).height());*/
+
+        var options = {
+            url: "website/resources/courses.json",
+
+            getValue: "text",
+
+            template: {
+                type: "links",
+                fields: {
+                    link: "website-link"
+                }
+            },
+
+            /* theme: "funky"*/
+
+        }
+
+        $("#provider-json").easyAutocomplete(options);
+    </script>
+    <!-- <script> -->
+    <!-- $("#provider-json").keypress(function(e) { -->
+    <!-- if (e.keyCode == 13) { -->
+    <!-- let userInput = e.target.value -->
+    <!-- let courseID = userInput.replace(/ .*/, ''); -->
+    <!-- alert(courseID); -->
+    <!-- } -->
+    <!-- }); -->
+    <!-- </script> -->
+    <!-- <script src="./website/js/jquery.easy-autocomplete.min.js"></script> -->
+</body>
+
+</html>
