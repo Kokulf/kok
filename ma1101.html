@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./website/js/jquery.easy-autocomplete.min.js"></script>
+    <link rel="stylesheet" href="./website/css/easy-autocomplete.min.css">
+    <link rel="stylesheet" href="./website/css/easy-autocomplete.themes.css">
+    <link rel="stylesheet" type="text/css" href="./website/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Kokulfs kokebok</title>
+</head>
+
+<body>
+    <div id="content">
+        <h1>Kokulfs kokebok</h1>
+
+        <input id="provider-json" style="margin: 0 auto; display: block;" />
+    </div>
+    <script>
+        var options = {
+            url: "website/resources/courses.json",
+
+            getValue: "text",
+
+            template: {
+                type: "links",
+                fields: {
+                    link: "website-link"
+                }
+            },
+
+            theme: "plate"
+
+        }
+
+        $("#provider-json").easyAutocomplete(options);
+    </script>
+
+    <!-- <script src="./website/js/jquery.easy-autocomplete.min.js"></script> -->
+</body>
+
+</html>

@@ -10,6 +10,24 @@
 }
 
 
+@media screen and (min-width: 940px) {
+    video {
+        display: inline;
+    }
+    #stillphoto {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    video {
+        display: none;
+    }
+    #stillphoto {
+        display: inline;
+    }
+}
+
 html,
 body {
     height: 100%;
@@ -26,6 +44,7 @@ body {
     sans-serif;
     font-weight: 300;
     text-align: center;
+    background-color: #00ADEF;
     /* overflow: hidden; */
 }
 
@@ -36,19 +55,113 @@ h3 {
     font-family: "Archivo";
 }
 
-#wrapper{
+/* CONTENT */
+
+/* BANNER  */
+
+video,
+img {
+    height: auto;
+    width: 100%;
+}
+
+#title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Wrapper for the video  */
+#screen {
     position: relative;
 }
 
-#banner{
-    width:100%;
-    height: auto;
+/* SOLUTIONS; EXAMS; RAPPORTS */
+
+/* BEARS */
+.panda {
+  margin: 100px 20px;
+  width: 250px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  display:inline-block;
+  vertical-align:top;
 }
 
-.btn.sharp {
-    border-radius:0;
+
+.panda:before {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 20px;
+  top: -50px;
+  left: 10px;
+  border-radius: 10px;
+  transform: rotate(-40deg);
+  z-index: -100;
 }
 
+.panda:after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 20px;
+  top: -50px;
+  right: 10px;
+  border-radius: 10px;
+  transform: rotate(40deg);
+  z-index: -100;
+}
+
+.content:before,
+.content:after {
+  content: "";
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  border-radius: 50%;
+  z-index: -99;
+}
+
+.content:after {
+  top: -50px;
+  bottom: auto;
+}
+
+.pink,
+.pink:before,
+.pink:after,
+.pink .content:before,
+.pink .content:after {
+    background: #F7F3E9;
+}
+.blue,
+.blue:before,
+.blue:after,
+.blue .content:before,
+.blue .content:after {
+    background: #9F6C4B;;
+  color:white;
+}
+
+.black {
+  background:linear-gradient(to bottom,white 20%,black 0%, black 50%, white 45%);
+  color:red;
+}
+.black .content:after {
+  background: white;
+}
+.black:before,
+.black:after,
+.black .content:before{
+  background: black;
+}
+
+
+/* Bootstrap COLUMNS */
 .col-sm-height {
     display: table-cell;
     float: none !important;
@@ -57,6 +170,12 @@ h3 {
 .row-same-height {
     display: table;
     width: 100%;
+}
+
+/* Bootstrap BUTTONS */
+
+.btn.sharp {
+    border-radius:0;
 }
 
 .btn-primary {
